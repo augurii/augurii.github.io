@@ -1,0 +1,23 @@
+<video width="320" height="240" autoplay>
+  <source src="1Maggio.mp4" type="video/mp4">
+</video>
+
+
+<script> <!-- BLOCCO CLICK DESTRO -->
+        function blocco_mousedx()
+         { return(false); }
+        document.oncontextmenu = blocco_mousedx;
+      </script>
+
+<script> <!-- BLOCCO SCORCIATOIE TASTIERA -->
+    document.onkeydown = function(blocco_tasti) {
+     if(event.keyCode == 123) 
+   { return false; }
+     if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'I'.charCodeAt(0)) { return false; }
+     if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'C'.charCodeAt(0)) { return false; }
+     if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'J'.charCodeAt(0)) { return false; }
+     if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'U'.charCodeAt(0)) 
+     if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'C'.charCodeAt(0)) { return false;}
+   { return false; } 
+   }
+</script>
